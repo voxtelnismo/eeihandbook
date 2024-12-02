@@ -12,315 +12,392 @@
 </head>
 
 <body>
-	<div class="main-container">
-	<h1 class="page-title"><img class="pando" src="assets/favicon.ico" alt="Pando" width="48" height="48">
-	EEI Handbook</h1>
+	<div id="main-container">
+		<h1 id="page-title"><img id="pando" src="assets/favicon.ico" alt="Pando">
+		EEI Handbook</h1>
 
-	<div class="button-container">
-		<button class="tab-link" onclick="openTab(event, 'bds')">Battledrills</button>
-		<button class="tab-link" onclick="openTab(event, 'eeis')">EEIs</button>
-		<button class="tab-link" onclick="openTab(event, 'idps')">IDP Questions</button>
-	</div>
+		<div class="button-container">
+			<button class="tab-link" onclick="openTab(event, 'bds')">Battledrills</button>
+			<button class="tab-link" onclick="openTab(event, 'eeis')">EEIs</button>
+			<button class="tab-link" onclick="openTab(event, 'idps')">IDP</button>
+			<button class="tab-link" onclick="openTab(event, 'leos')">HN LE</button>
+		</div>
 
 		<div class="card-group" id="bds">
 			<div class="card">
-			<h3>Armored Vehicles</h3>
-			<ul class="card-content">
-			<li>Nomenclature/designation</li>
-			<li>Owning unit</li>
-			<li>How many should be in unit?</li>
-			<li>How many are remaining? (DOI)</li>
-			<li>Modifications</li>
-			<li>Laser countermeasures</li>
-			<li>EW countermeasures</li>
-			<li>Communications gear</li>
-			<li>Maintenance intervals (DOI)</li>
-			<li>Crew proficiency</li>
-			</ul>
+				<h3>Armored Vehicles</h3>
+				<ul class="card-content">
+					<li>Nomenclature/designation</li>
+					<li>Owning unit</li>
+					<li>How many should be in unit?</li>
+					<li>How many remain? (DOI)</li>
+					<li>Modifications</li>
+					<li>Laser countermeasures</li>
+					<li>EW countermeasures</li>
+					<li>Communications gear</li>
+					<li>Maintenance intervals (DOI)</li>
+					<li>Crew proficiency</li>
+				</ul>
 			</div>
 
 			<div class="card">
-			<h3>Artillery</h3>
-			<ul class="card-content">
-			<li>Nomenclature/designation</li>
-			<li>Owning unit</li>
-			<li>How many should be in unit?</li>
-			<li>How many are remaining? (DOI)</li>
-			<li>Caliber</li>
-			<li>Range</li>
-			<li>Target location error</li>
-			<li>Initial qty of munitions</li>
-			<li>Remaining qty of munitions (DOI)</li>
-			<li>Towed or self-propelled?</li>
-			<li>Shoot-and-scoot timeline</li>
-			<li>Maintenance intervals (DOI)</li>
-			<li>Crew proficiency</li>
-			</ul>
+				<h3>Artillery</h3>
+				<ul class="card-content">
+					<li>Nomenclature/designation</li>
+					<li>Owning unit</li>
+					<li>How many should be in unit?</li>
+					<li>How many remain? (DOI)</li>
+					<li>Caliber</li>
+					<li>Range</li>
+					<li>Circular Error Probable</li>
+					<li>Munitions initial quantity</li>
+					<li>Munitions remaining quantity (DOI)</li>
+					<li>Shoot-and-scoot timeline</li>
+					<li>Maintenance intervals (DOI)</li>
+					<li>Crew proficiency</li>
+				</ul>
 			</div>
 
 			<div class="card">
-			<h3>Radars</h3>
-			<ul class="card-content">
-			<li>Nomenclature/designation</li>
-			<li>Owning unit</li>
-			<li>How many should be in unit?</li>
-			<li>How many are remaining? (DOI)</li>
-			<li>Linked systems</li>
-			<li>Range</li>
-			<li>Radiation time windows</li>
-			<li>Radiation azimuth</li>
-			<li>Emplacement/displacement timeline</li>
-			<li>Maintenance intervals (DOI)</li>
-			<li>Crew proficiency</li>
-			</ul>
+				<h3>Radars</h3>
+				<ul class="card-content">
+					<li>Nomenclature/designation</li>
+					<li>Owning unit</li>
+					<li>How many should be in unit?</li>
+					<li>How many remain? (DOI)</li>
+					<li>Linked systems</li>
+					<li>Range</li>
+					<li>Radiation time windows</li>
+					<li>Radiation azimuth</li>
+					<li>Emplacement/displacement timeline</li>
+					<li>Maintenance intervals (DOI)</li>
+					<li>Crew proficiency</li>
+				</ul>
 			</div>
 
 			<div class="card">
-			<h3>Air Defense Systems</h3>
-			<ul class="card-content">
-			<li>Nomenclature/designation</li>
-			<li>Owning unit</li>
-			<li>How many should be in unit?</li>
-			<li>How many are remaining? (DOI)</li>
-			<li>What is it protecting?</li>
-			<li>Starting combat load</li>
-			<li>Current combat load</li>
-			<li>How integrated with other AD?</li>
-			<li>Next resupply</li>
-			<li>Communications gear</li>
-			<li>Maintenance intervals (DOI)</li>
-			<li>Crew proficiency</li>
-			</ul>
+				<h3>Air Defense Systems</h3>
+				<ul class="card-content">
+					<li>Nomenclature/designation</li>
+					<li>Owning unit</li>
+					<li>How many should be in unit?</li>
+					<li>How many remain? (DOI)</li>
+					<li>What is it protecting?</li>
+					<li>Starting combat load</li>
+					<li>Current combat load</li>
+					<li>How integrated with other AD?</li>
+					<li>Next resupply</li>
+					<li>Communications gear</li>
+					<li>Maintenance intervals (DOI)</li>
+					<li>Crew proficiency</li>
+				</ul>
 			</div>
 
 			<div class="card">
-			<h3>UAS</h3>
-			<ul class="card-content">
-			<li>Nomenclature/designation</li>
-			<li>Owning unit</li>
-			<li>How many should be in unit?</li>
-			<li>How many are remaining? (DOI)</li>
-			<li>Purpose (sector of observation if recon)</li>
-			<li>Payloads</li>
-			<li>Typical operational altitude</li>
-			<li>Location of launch site</li>
-			<li>Primary recovery site</li>
-			<li>Emergency recovery sites</li>
-			<li>Type of GCS</li>
-			<li>EW Hardening</li>
-			<li>EW failsafe protocol</li>
-			</ul>
+				<h3>UAS</h3>
+				<ul class="card-content">
+					<li>Nomenclature/designation</li>
+					<li>Owning unit</li>
+					<li>How many should be in unit?</li>
+					<li>How many remain? (DOI)</li>
+					<li>Purpose (sector of observation if recon)</li>
+					<li>Payloads</li>
+					<li>Typical operational altitude</li>
+					<li>Location of launch site</li>
+					<li>Primary recovery site</li>
+					<li>Emergency recovery sites</li>
+					<li>Type of GCS</li>
+					<li>EW Hardening</li>
+					<li>EW failsafe protocol</li>
+				</ul>
 			</div>
 
 			<div class="card">
-			<h3>GCS</h3>
-			<ul class="card-content">
-			<li>Nomenclature/designation</li>
-			<li>Owning unit</li>
-			<li>Location of GCS</li>
-			<li>Type of uplink</li>
-			<li>Frequency of uplink</li>
-			<li>Encryption of uplink</li>
-			<li>Type of downlink</li>
-			<li>Frequency of downlink</li>
-			<li>Encryption of downlink</li>
-			<li>Last mission</li>
-			<li>Planned next mission</li>
-			<li>Reporting criteria</li>
-			<li>Engagement criteria</li>
-			<li>Supported HQ</li>
-			<li>Supported operation</li>
-			</ul>
+				<h3>GCS</h3>
+				<ul class="card-content">
+					<li>Nomenclature/designation</li>
+					<li>Owning unit</li>
+					<li>Location of GCS</li>
+					<li>Type of uplink</li>
+					<li>Frequency of uplink</li>
+					<li>Encryption of uplink</li>
+					<li>Type of downlink</li>
+					<li>Frequency of downlink</li>
+					<li>Encryption of downlink</li>
+					<li>Last mission</li>
+					<li>Planned next mission</li>
+					<li>Reporting criteria</li>
+					<li>Engagement criteria</li>
+					<li>Supported HQ</li>
+					<li>Supported operation</li>
+				</ul>
 			</div>
 
 			<div class="card">
-			<h3>Obstacles</h3>
-			<ul class="card-content">
-			<li>Type and purpose</li>
-			<li>Location</li>
-			<li>Owning unit</li>
-			<li>Orientation</li>
-			<li>Dimensions</li>
-			<li>Sketch (if possible)</li>
-			<li>When emplaced?</li>
-			<li>How emplaced?</li>
-			<li>How monitored?</li>
-			<li>How integrated with other obstacles?</li>
-			<li>Mine fields: density</li>
-			<li>Mine fields: depth</li>
-			<li>Mine fields: trigger type</li>
-			</ul>
+				<h3>Obstacles</h3>
+				<ul class="card-content">
+					<li>Type and purpose</li>
+					<li>Location</li>
+					<li>Owning unit</li>
+					<li>Orientation</li>
+					<li>Dimensions</li>
+					<li>Sketch (if possible)</li>
+					<li>When emplaced?</li>
+					<li>How emplaced?</li>
+					<li>How monitored?</li>
+					<li>How covered by IDF? (exploit IDF)</li>
+					<li>How integrated with other obstacles?</li>
+					<li>Best place to breach</li>
+					<li>Mine fields: density</li>
+					<li>Mine fields: depth</li>
+					<li>Mine fields: type (magnetic, top atk.)</li>
+					<li>Mine fields: anti-handling measures</li>
+				</ul>
 			</div>
 
 			<div class="card">
-			<h3>Facilities/Dispositions</h3>
-			<ul class="card-content">
-			<li>Purpose</li>
-			<li>Location</li>
-			<li>Owning unit</li>
-			<li>Orientation</li>
-			<li>Avenues of ingress/egress</li>
-			<li>Sketch (if possible)</li>
-			<li>Internal layout</li>
-			<li>Defensive measures</li>
-			<li>Camouflage measures (including EM)</li>
-			<li>Prominent features (detectable from ISR)</li>
-			<li>Emmiters and associated frequencies</li>
-			<li>Internal pattern of life</li>
-			<li>Sustainment</li>
-			<li>Life support (food, water, power)</li>
-			<li>Communications</li>
-			<li>Withdrawal plan</li>
-			<li>Withdrawal criteria</li>
-			</ul>
+				<h3>Facilities/Dispositions</h3>
+				<ul class="card-content">
+					<li>Purpose</li>
+					<li>Location</li>
+					<li>Owning unit</li>
+					<li>Orientation</li>
+					<li>Avenues of ingress/egress</li>
+					<li>Sketch (if possible)</li>
+					<li>Internal layout</li>
+					<li>Defensive measures</li>
+					<li>Camouflage measures (including EM)</li>
+					<li>Prominent features (how to find from air)</li>
+					<li>Emmiters and associated frequencies</li>
+					<li>Internal pattern of life</li>
+					<li>Sustainment</li>
+					<li>Life support (food, water, power)</li>
+					<li>Communications</li>
+					<li>Withdrawal plan</li>
+					<li>Withdrawal criteria</li>
+				</ul>
 			</div>
 		</div>
-		
 
 		<div class="card-group" id="eeis">
 			<div class="card">
-			<h3>Battle Damage Assessment</h3>
-			<ul class="card-content">
-			<li>List destroyed equipment</li>
-			<li>List remaining equipment</li>
-			<li>Pattern of life in last 24 hours</li>
-			<li>TTPs for employing this equipment</li>
-			<li>How consistent were TTPs across formations?</li>
-			<li>List all successful engagements</li>
-			<li>Why successful?</li>
-			<li>List all unsuccessful engagements</li>
-			<li>Why unsuccessful?</li>
-			<li>Command initiatives to increase survivability</li>
-			<li>Crew initiatives to increase survivability</li>
-			<li>Recovery/repair/replacement timeline</li>
-			</ul>
+				<h3>Battle Damage Assessment</h3>
+				<ul class="card-content">
+					<li>List destroyed equipment</li>
+					<li>List remaining equipment</li>
+					<li>Pattern of life in last 24 hours</li>
+					<li>TTPs for employing this equipment</li>
+					<li>How consistent were TTPs across formations?</li>
+					<li>List all successful engagements</li>
+					<li>Why successful?</li>
+					<li>List all unsuccessful engagements</li>
+					<li>Why unsuccessful?</li>
+					<li>Command initiatives to increase survivability</li>
+					<li>Crew initiatives to increase survivability</li>
+					<li>Recovery/repair/replacement timeline</li>
+				</ul>
 			</div>
 
 			<div class="card">
-			<h3>CARVER Questionnaire</h3>
-			<ul class="card-content">
-			<li>Importance to ENY CDR</li>
-			<li>Location, pattern of life, application</li>
-			<li>How replaceable? How will ENY CDR adapt to loss?</li>
-			<li>How is it protected? Custom measures and protocols</li>
-			<li>What planned operations affected by loss?</li>
-			<li>How will operations change?</li>
-			</ul>
+				<h3>CARVER Questionnaire</h3>
+				<ul class="card-content">
+					<li>Importance to ENY CDR</li>
+					<li>Location, pattern of life, application</li>
+					<li>How replaceable? How will ENY CDR adapt to loss?</li>
+					<li>How is it protected? Custom measures and protocols</li>
+					<li>What planned operations affected by loss?</li>
+					<li>How will operations change?</li>
+				</ul>
 			</div>
 
 			<div class="card">
-			<h3>Cyber/EW Effects</h3>
-			<ul class="card-content">
-			<li>ENY C4 disruptions in last 48 hours</li>
-			<li>Time windows of disruptions</li>
-			<li>Systems affected</li>
-			<li>How affected?</li>
-			<li>Operations affected</li>
-			<li>Systems unaffected</li>
-			<li>ENY compensatory measures</li>
-			<li>Effectiveness of compensatory measures</li>
-			<li>Changes in ENY TTPs</li>
-			</ul>
+				<h3>Cyber/EW Effects</h3>
+				<ul class="card-content">
+					<li>ENY C4 disruptions in last 48 hours</li>
+					<li>Time windows of disruptions</li>
+					<li>Systems affected</li>
+					<li>How affected?</li>
+					<li>Operations affected</li>
+					<li>Systems unaffected</li>
+					<li>Why unaffected?</li>
+					<li>How distributed are countermeasures?</li>
+					<li>Changes in ENY TTPs</li>
+				</ul>
 			</div>
 
 			<div class="card">
-			<h3>PAO/IO Effects</h3>
-			<ul class="card-content">
-			<li>Morale in unit</li>
-			<li>Factors affecting morale</li>
-			<li>Sources of news (self, peers, subordinates, superiors)</li>
-			<li>Attitudes among peers</li>
-			<li>Perception of BLUFOR</li>
-			<li>Perception of REDFOR</li>
-			<li>What messaging seen about BLUFOR?</li>
-			<li>What channels were used?</li>
-			<li>What messaging seen about REDFOR</li>
-			<li>What channels were used?</li>
-			</ul>
+				<h3>PAO/IO Effects</h3>
+				<ul class="card-content">
+					<li>Morale in unit</li>
+					<li>Factors affecting morale</li>
+					<li>Sources of news (self, peers, subordinates, superiors)</li>
+					<li>Attitudes among peers</li>
+					<li>Perception of BLUFOR</li>
+					<li>Perception of REDFOR</li>
+					<li>What messaging seen about BLUFOR?</li>
+					<li>What channels were used?</li>
+					<li>What messaging seen about REDFOR</li>
+					<li>What channels were used?</li>
+				</ul>
 			</div>
 
 			<div class="card">
-			<h3>PAO/IO Effects</h3>
-			<ul class="card-content">
-			<li>Morale in unit</li>
-			<li>Factors affecting morale</li>
-			<li>Sources of news (self, peers, subordinates, superiors)</li>
-			<li>Attitudes among peers</li>
-			<li>Perception of BLUFOR</li>
-			<li>Perception of REDFOR</li>
-			<li>What messaging seen about BLUFOR?</li>
-			<li>What channels were used?</li>
-			<li>What messaging seen about REDFOR</li>
-			<li>What channels were used?</li>
-			</ul>
+				<h3>GLOCs</h3>
+				<ul class="card-content">
+					<li>How is the unit supplied?</li>
+					<li>Exact route</li>
+					<li>Source of supplies</li>
+					<li>Types of supplies</li>
+					<li>Frequency/schedule</li>
+					<li>Defensive measures</li>
+					<li>Last time route was used?</li>
+					<li>Next time route will be used?</li>
+					<li>Alternate route</li>
+					<li>Failover condition</li>
+				</ul>
 			</div>
-  		</div>
-
+		</div>
 
 		<div class="card-group" id="idps">
 			<div class="card">
-			<h3>ID Armor</h3>
-			<ul class="card-content">
-			<li>Shape of hull</li>
-			<li>Shape of turret</li>
-			<li>Tracked or wheeled</li>
-			<li>How many wheels/rollers?</li>
-			<li>Stamped or cast wheels?</li>
-			<li>Hatches on the sides</li>
-			<li>Hatches/ramp on the back</li>
-			<li>Main armament</li>
-			<li>Does the gun protrude past the hull?</li>
-			<li>Are there "bricks" on hull or turret?</li>
-			<li>Shape and count of the periscope ports</li>
-			<li>Shape and location of exhaust vents</li>
-			</ul>
+				<h3>ID Armor</h3>
+				<ul class="card-content">
+					<li>Shape of hull</li>
+					<li>Shape of turret</li>
+					<li>Tracked or wheeled</li>
+					<li>How many wheels/rollers?</li>
+					<li>Stamped or cast wheels?</li>
+					<li>Hatches on the sides</li>
+					<li>Hatches/ramp on the back</li>
+					<li>Main armament</li>
+					<li>Does the gun protrude past the hull?</li>
+					<li>Are there "bricks" on hull or turret?</li>
+					<li>Shape and count of the periscope ports</li>
+					<li>Shape and location of exhaust vents</li>
+				</ul>
 			</div>
 
 			<div class="card">
-			<h3>ID Radar</h3>
-			<ul class="card-content">
-			<li>Wheeled or tracked?</li>
-			<li>Shape of radar</li>
-			<li>Rotating or static?</li>
-			<li>Does the hull have legs?</li>
-			<li>Is the radar on an arm?</li>
-			<li>How tall is the arm?</li>
-			<li>Number of crew</li>
-			</ul>
+				<h3>ID Fires</h3>
+				<ul class="card-content">
+					<li>Towed or self-propelled?</li>
+					<li>Towed: how many crew?</li>
+					<li>Towed: what vehicle towing?</li>
+					<li>Towed: what equipment nearby?</li>
+					<li>Towed: how many wheels?</li>
+					<li>Self-propelled: shape of hull</li>
+					<li>Self-propelled: shape of turret</li>
+					<li>Self-propelled: wheeled or tracked?</li>
+					<li>Self-propelled: number of wheels/rollers</li>
+					<li>Self-propelled: spacing between rollers</li>
+					<li>Camouflage measures</li>
+					<li>Kinetic protective measures (nets, grills)</li>
+					<li>Barrel or rocket?</li>
+					<li>Barrel: shape of barrel</li>
+					<li>Barrel: shape of muzzle break</li>
+					<li>Rocket: how many guide tubes?</li>
+					<li>Rocket: length and diameter of tubes?</li>
+				</ul>
 			</div>
 
 			<div class="card">
-			<h3>ID Air Defense</h3>
-			<ul class="card-content">
-			<li>Tracked or wheeled?</li>
-			<li>Machinegun barrels or rocket launchers?</li>
-			<li>How many?</li>
-			<li>Does it have legs?</li>
-			<li>Does it carry rockets in the open?</li>
-			<li>How many?</li>
-			<li>What shape?</li>
-			<li>What color?</li>
-			</ul>
+				<h3>ID Radar</h3>
+				<ul class="card-content">
+					<li>Tracked or wheeled?</li>
+					<li>Shape of radar</li>
+					<li>Rotating or static?</li>
+					<li>Does the hull have legs?</li>
+					<li>Is the radar on an arm?</li>
+					<li>How tall is the arm?</li>
+					<li>Number of crew</li>
+				</ul>
 			</div>
 
 			<div class="card">
-			<h3>ID Air UAS</h3>
-			<ul class="card-content">
-			<li>Jet or propeller?</li>
-			<li>Electric or internal combustion?</li>
-			<li>Shape of the fuselage</li>
-			<li>Shape of wings</li>
-			<li>Approximate size</li>
-			<li>Shape of tail</li>
-			<li>Direction of flight</li>
-			<li>Estimated altitude</li>
-			<li>What color?</li>
-			</ul>
+				<h3>ID Air Defense</h3>
+				<ul class="card-content">
+					<li>Tracked or wheeled?</li>
+					<li>Does it have legs?</li>
+					<li>Guns or rockets?</li>
+					<li>Guns: how many?</li>
+					<li>Guns: how arranged?</li>
+					<li>Guns: describe shape</li>
+					<li>Guns: describe muzzle break</li>
+					<li>Rockets: open or tubes?</li>
+					<li>Rockets: how many?</li>
+					<li>Rockets: shape and color</li>
+					<li>Does it have attached radar?</li>
+					<li>What does it look like?</li>
+					<li>Where is it relative to the hull?</li>
+				</ul>
 			</div>
-  		</div>
+
+			<div class="card">
+				<h3>ID UAS</h3>
+				<ul class="card-content">
+					<li>Jet or propeller?</li>
+					<li>Electric or internal combustion?</li>
+					<li>Shape of the fuselage</li>
+					<li>Shape of wings</li>
+					<li>Approximate size</li>
+					<li>Shape of tail</li>
+					<li>Direction of flight</li>
+					<li>Estimated altitude</li>
+					<li>What color?</li>
+				</ul>
+			</div>
+
+			<div class="card">
+				<h3>ID COA</h3>
+				<ul class="card-content">
+					<li>What ENY equipment did you see?</li>
+					<li>Where was it?</li>
+					<li>What did the formation look like?</li>
+					<li>Diagram of ENY formation</li>
+					<li>How fast was the formation moving?</li>
+					<li>What parts of formation were moving?</li>
+					<li>Orientation of each element</li>
+					<li>Spacing between elements</li>
+					<li>Location of defensive positions</li>
+					<li>Location of construction equipment</li>
+					<li>Location of anti-tank equipment</li>
+					<li>Location of artillery</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="card-group" id="leos">
+			<div class="card">
+				<h3>Shaping Operations</h3>
+				<ul class="card-content">
+					<li>Spike in crime/vandalism</li>
+					<li>Reports of service outages (cell/internet)</li>
+					<li>Spike in bogus police reports/calls</li>
+					<li>Spike in propaganda posters</li>
+					<li>Reports of pro-ENY social media posts</li>
+					<li>Sudden increase in separatist rhetoric</li>
+					<li>Increase in foreign license plates</li>
+					<li>Short notice large public gatherings</li>
+					<li>MAMs with large volumes of foreign currency</li>
+				</ul>
+			</div>
+
+			<div class="card">
+				<h3>SPF</h3>
+				<ul class="card-content">
+					<li>Foreigners with unregistered weapons</li>
+					<li>Convoys of earth-tone SUVs</li>
+					<li>Drones over sensitive objects</li>
+					<li>MAMs loitering near sensitive objects</li>
+					<li>MAMs with expensive camera gear (telephoto lenses)</li>
+					<li>Foreign MAMs with no entry visa</li>
+					<li>Bulk real-estate purchases in short time</li>
+				</ul>
+			</div>
+		</div>
+
 	</div>
+	<script src="assets/script.js"></script>
 
-  <script src="assets/script.js"></script>
 </body>
-
 </html>
